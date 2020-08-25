@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redshift GUI</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        #titulo {
+            text-align: center;
+        }
+
+        #switch_daemon {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">RedShift GUI</h1>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Latitude</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Latitude" aria-label="Latitude"
+            aria-describedby="basic-addon1" id="Latitude">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Longitude</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Longitude" aria-label="Longitude"
+            aria-describedby="basic-addon1" id="Longitude">
+    </div>
+
+    <button type="button" class="btn btn-primary" id="save_settings">Save Settings</button>
+
+    <button type="button" class="btn btn-primary" id="switch_daemon">Start</button>
+    <script src="main.js"></script>
+</body>
+
+</html>

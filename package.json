@@ -1,0 +1,15 @@
+{
+  "name": "redshift-gui",
+  "version": "1.0.0",
+  "description": "Redshift Gui based on Electron",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Zlynt (Ivan Teixeira)",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.2.1",
+    "electron-get-location": "^1.0.1"
+  }
+}
